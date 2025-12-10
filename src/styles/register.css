@@ -1,0 +1,383 @@
+
+/* ===========================
+   CrearCuenta.css - Versión Final Optimizada
+=========================== */
+
+.crearcuenta-container {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #0a0a0a, #1b1b1b);
+  color: #ffffff;
+  text-align: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.crearcuenta-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #C6A252;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.crearcuenta-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 80px;
+  height: 4px;
+  background-color: #C6A252;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.crearcuenta-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 188, 212, 0.1);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.crearcuenta-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #C6A252;
+}
+
+.crearcuenta-form input[type="text"],
+.crearcuenta-form input[type="email"],
+.crearcuenta-form input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s ease;
+}
+
+.crearcuenta-form input::placeholder {
+  color: #ffffff;
+}
+
+.crearcuenta-form input:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.error {
+  display: block;
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* Botón de registro */
+.crearcuenta-form button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #C6A252;
+  color: #0a0a0a;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.crearcuenta-form button[type="submit"]:hover {
+  background-color: #d4b16a;
+}
+
+.crearcuenta-form button[type="submit"]:disabled {
+  background-color: #000000;
+  cursor: not-allowed;
+}
+
+/* Checkbox de términos */
+.terminos-checkbox {
+  margin: 20px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #000000;
+}
+
+.terminos-checkbox input[type="checkbox"] {
+  accent-color: #C6A252;
+  width: 18px;
+  height: 18px;
+}
+
+/* Botón para ver términos */
+.ver-terminos-btn {
+  display: block;
+  margin: 0 auto 20px auto;
+  background: none;
+  border: none;
+  color: #C6A252;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+/* ===========================
+   CrearCuenta.css - Paleta Profesional
+=========================== */
+
+.crearcuenta-container {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #020617, #0f172a);
+  color: #e5e7eb; /* Texto principal */
+  text-align: center;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.crearcuenta-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #38bdf8; /* Azul acento */
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+}
+
+.crearcuenta-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  width: 80px;
+  height: 4px;
+  background-color: #38bdf8;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.crearcuenta-form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+  background: rgba(15, 23, 42, 0.85);
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 24px rgba(56, 189, 248, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid #1e293b;
+}
+
+.crearcuenta-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #22c55e; /* Verde principal */
+}
+
+.crearcuenta-form input[type="text"],
+.crearcuenta-form input[type="email"],
+.crearcuenta-form input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #e5e7eb;
+  font-size: 1rem;
+  outline: none;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crearcuenta-form input::placeholder {
+  color: #94a3b8; /* Texto secundario */
+}
+
+.crearcuenta-form input:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 0 2px #38bdf8; /* Azul acento */
+}
+
+.error {
+  display: block;
+  color: #f87171; /* Rojo error */
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* Botón de registro */
+.crearcuenta-form button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  background-color: #22c55e; /* Verde principal */
+  color: #020617;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.crearcuenta-form button[type="submit"]:hover {
+  background-color: #4ade80; /* Verde claro */
+  transform: translateY(-2px);
+}
+
+.crearcuenta-form button[type="submit"]:disabled {
+  background-color: #1e293b;
+  color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* Checkbox de términos */
+.terminos-checkbox {
+  margin: 20px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+.terminos-checkbox input[type="checkbox"] {
+  accent-color: #22c55e;
+  width: 18px;
+  height: 18px;
+}
+
+/* Botón para ver términos */
+.ver-terminos-btn {
+  display: block;
+  margin: 0 auto 20px auto;
+  background: none;
+  border: none;
+  color: #38bdf8;
+  font-weight: bold;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.ver-terminos-btn:hover {
+  color: #4ade80;
+}
+
+/* Contenido de términos */
+.terminos-contenido {
+  background: rgba(15, 23, 42, 0.7);
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  margin-top: 30px;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+  line-height: 1.6;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.terminos-contenido p {
+  margin-bottom: 10px;
+}
+
+/* Animación suave */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .crearcuenta-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .crearcuenta-form {
+    padding: 30px 20px;
+    border-radius: 12px;
+  }
+
+  .crearcuenta-form input {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  .crearcuenta-form button[type="submit"] {
+    font-size: 0.95rem;
+    padding: 12px;
+  }
+
+  .ver-terminos-btn {
+    font-size: 0.9rem;
+  }
+
+  .terminos-contenido {
+    padding: 15px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .crearcuenta-title {
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+  }
+
+  .crearcuenta-form {
+    padding: 20px 15px;
+  }
+
+  .crearcuenta-form input {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  .crearcuenta-form button[type="submit"] {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .ver-terminos-btn {
+    font-size: 0.85rem;
+  }
+
+  .terminos-contenido {
+    padding: 15px;
+    font-size: 0.85rem;
+  }
+
+  .terminos-checkbox {
+    font-size: 0.85rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .terminos-checkbox input[type="checkbox"] {
+    width: 14px;
+    height: 14px;
+  }
+}

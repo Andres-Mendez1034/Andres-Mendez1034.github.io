@@ -1,0 +1,323 @@
+
+/* ===========================
+   PersonalDashboard.css - Premium
+   Paleta: #020617 / #0f172a / #1e293b / #38bdf8 / #22c55e / #e5e7eb / #94a3b8
+=========================== */
+
+/* Wrapper */
+.pd {
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 16px;
+  padding: 24px;
+  color: #e5e7eb;
+  box-shadow: 0 12px 30px rgba(2, 6, 23, 0.45);
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+/* Header */
+.pd__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.pd__header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.pd__marker {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: linear-gradient(135deg, #22c55e 0%, #38bdf8 100%);
+  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.25);
+  animation: pdPulse 2.4s infinite ease-in-out;
+}
+
+@keyframes pdPulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(1.15); opacity: 0.9; }
+}
+
+.pd__title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  color: #e5e7eb;
+}
+
+/* Actions */
+.pd__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Buttons */
+.pd__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: transform .12s ease, box-shadow .25s ease, background .25s ease, color .25s ease, border-color .25s ease;
+}
+
+/* Variantes */
+.pd__btn--primary {
+  background: linear-gradient(135deg, #22c55e 0%, #38bdf8 100%);
+  color: #020617;
+  box-shadow: 0 6px 16px rgba(56, 189, 248, 0.25);
+}
+.pd__btn--primary:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.pd__btn--secondary {
+  background: #0f172a;
+  color: #e5e7eb;
+  border: 1px solid #1e293b;
+}
+.pd__btn--secondary:hover {
+  border-color: rgba(148, 163, 184, 0.25);
+  box-shadow: 0 4px 12px rgba(148, 163, 184, 0.15);
+  transform: translateY(-1px);
+}
+
+.pd__btn--ghost {
+  background: transparent;
+  color: #e5e7eb;
+  border: 1px solid rgba(148, 163, 184, 0.25);
+}
+.pd__btn--ghost:hover {
+  background: rgba(2, 6, 23, 0.6);
+  border-color: rgba(148, 163, 184, 0.35);
+}
+
+.pd__btn--link {
+  background: transparent;
+  color: #38bdf8;
+  border: 1px solid transparent;
+}
+.pd__btn--link:hover {
+  color: #7dd3fc;
+  text-decoration: underline;
+}
+
+/* Subtitle */
+.pd__subtitle {
+  margin: 6px 0 16px;
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Grid de métricas */
+.pd__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* Card */
+.pd-card {
+  background: linear-gradient(180deg, rgba(2, 6, 23, 0.7) 0%, rgba(2, 6, 23, 0.95) 100%);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 14px;
+  padding: 16px;
+  box-shadow: inset 0 1px 0 rgba(148, 163, 184, 0.08);
+  transition: transform .12s ease, box-shadow .25s ease, border-color .25s ease, background .25s ease;
+}
+.pd-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(56, 189, 248, 0.15);
+  border-color: rgba(148, 163, 184, 0.28);
+}
+
+.pd-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.pd-card__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: #e5e7eb;
+}
+
+/* Badge */
+.pd-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #020617;
+  background: linear-gradient(135deg, #facc15 0%, #fde047 100%); /* default: warning suave */
+  box-shadow: 0 3px 10px rgba(250, 204, 21, 0.18);
+}
+
+/* Tonos */
+.pd-badge--success {
+  background: linear-gradient(135deg, #22c55e 0%, #4ade80 100%);
+  color: #020617;
+  box-shadow: 0 3px 10px rgba(34, 197, 94, 0.18);
+}
+.pd-badge--info {
+  background: linear-gradient(135deg, #38bdf8 0%, #7dd3fc 100%);
+  color: #020617;
+  box-shadow: 0 3px 10px rgba(56, 189, 248, 0.18);
+}
+.pd-badge--warning {
+  background: linear-gradient(135deg, #facc15 0%, #fde047 100%);
+  color: #020617;
+}
+.pd-badge--default {
+  background: rgba(148, 163, 184, 0.25);
+  color: #e5e7eb;
+}
+
+/* Valores */
+.pd-card__value {
+  margin: 8px 0 4px;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+  background: linear-gradient(135deg, #e5e7eb 0%, #38bdf8 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.pd-card__unit {
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 6px;
+  color: #94a3b8;
+  background: none;
+}
+
+.pd-card__hint {
+  margin: 0;
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+/* Panel CTA */
+.pd-panel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.pd-panel__text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.pd-panel__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 800;
+  color: #e5e7eb;
+}
+
+.pd-panel__desc {
+  margin: 0;
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+.pd-panel__actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Focus visible para accesibilidad */
+.pd :where(a, button).pd__btn:focus-visible,
+.pd :where(.pd-card a, .pd-panel a):focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.5);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .pd {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .pd__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .pd__title {
+    font-size: 16px;
+  }
+
+  .pd__subtitle {
+    font-size: 13px;
+  }
+
+  .pd-card__value {
+    font-size: 24px;
+  }
+
+  .pd-panel {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pd-panel__actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 480px) {
+  .pd {
+    padding: 14px;
+    border-radius: 12px;
+  }
+
+  .pd__title {
+    font-size: 15px;
+  }
+
+  .pd-card__value {
+    font-size: 22px;
+  }
+
+  .pd__btn {
+    padding: 9px 12px;
+    font-size: 13px;
+  }
+}
