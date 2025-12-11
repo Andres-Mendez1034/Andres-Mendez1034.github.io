@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-
+import "./Aplicativo.css";
 /**
  * Aplicativo.jsx (Boosted, sin CSS)
  * - Clases BEM listas para estilizar: aplicativo__*, ml-box__*, result__*, etc.
