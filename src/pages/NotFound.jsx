@@ -1,8 +1,11 @@
 import React from "react";
-import { useHistory } from "react-router-dom"; // Para redirección en React Router
-
+import { useNavigate } from "react-router-dom";
 
 export default function NotFound() {
+  const navigate = useNavigate(); // Si necesitas usar la navegación de React Router
+
+
+
   const handleBack = () => {
     if (typeof window !== "undefined") {
       if (window.history.length > 1) window.history.back();
@@ -11,12 +14,7 @@ export default function NotFound() {
   };
 
   return (
-    <main
-      style={styles.main}
-      role="main"
-      aria-label="Página no encontrada"
-      id="main"
-    >
+    <main style={styles.main} role="main" aria-label="Página no encontrada" id="main">
       <section style={styles.card} aria-live="polite">
         {/* Badge 404 */}
         <div style={styles.badge} aria-hidden="true">
@@ -31,48 +29,31 @@ export default function NotFound() {
 
         {/* Descripción */}
         <p style={styles.desc}>
-          Lo sentimos, no pudimos encontrar la página que buscas. Puede que el
-          enlace esté roto o la URL haya cambiado.
+          Lo sentimos, no pudimos encontrar la página que buscas. Puede que el enlace esté roto o la URL haya cambiado.
         </p>
 
         {/* Acciones */}
         <div style={styles.actions}>
-          <a
-            href="/"
-            style={{ ...styles.btn, ...styles.btnPrimary }}
-          >
+          <a href="/" style={{ ...styles.btn, ...styles.btnPrimary }}>
             Ir al inicio
           </a>
 
-          <button
-            type="button"
-            onClick={handleBack}
-            style={{ ...styles.btn, ...styles.btnGhost }}
-          >
+          <button type="button" onClick={handleBack} style={{ ...styles.btn, ...styles.btnGhost }}>
             Volver atrás
           </button>
         </div>
 
         {/* Sugerencias */}
         <nav aria-label="Sugerencias" style={styles.suggestions}>
-          <a
-            href="/dashboards"
-            style={styles.suggestionLink}
-          >
+          <a href="/dashboards" style={styles.suggestionLink}>
             Ver dashboards
           </a>
 
-          <a
-            href="#chatbot"
-            style={styles.suggestionLink}
-          >
+          <a href="#chatbot" style={styles.suggestionLink}>
             Abrir chatbot
           </a>
 
-          <a
-            href="/contacto"
-            style={styles.suggestionLink}
-          >
+          <a href="/contacto" style={styles.suggestionLink}>
             Contacto
           </a>
         </nav>
