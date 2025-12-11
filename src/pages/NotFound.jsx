@@ -1,4 +1,6 @@
 import React from "react";
+import { useHistory } from "react-router-dom"; // Para redirección en React Router
+
 
 export default function NotFound() {
   const handleBack = () => {
